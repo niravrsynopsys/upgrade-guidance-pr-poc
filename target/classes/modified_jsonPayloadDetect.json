@@ -1,0 +1,77 @@
+{
+    "items": [
+        {
+            "externalId": "org.springframework:spring-beans:5.3.18",
+            "allVulnerabilities": [
+                {
+                    "name": "BDSA-2022-1040",
+                    "vulnSeverity": "LOW",
+                    "cweIds": [
+                        "CWE-20"
+                    ]
+                },
+                {
+                    "name": "BDSA-2022-1329",
+                    "vulnSeverity": "MEDIUM",
+                    "cweIds": [
+                        "CWE-684"
+                    ]
+                }
+            ],
+            "shortTermUpgradeGuidance": {
+                "versionName": "5.3.25",
+                "externalId": "org.springframework:spring-beans:5.3.25"
+            },
+            "longTermUpgradeGuidance": {
+                "versionName": "6.0.4",
+                "externalId": "org.springframework:spring-beans:6.0.4"
+            },
+            "transitiveUpgradeGuidance": [
+                {
+                    "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                    "shortTermUpgradeGuidance": {
+                        "versionName": "2.7.8",
+                        "externalId": "org.springframework.boot:spring-boot:2.7.8"
+                    },
+                    "longTermUpgradeGuidance": {
+                        "versionName": "3.0.2",
+                        "externalId": "org.springframework.boot:spring-boot:3.0.2"
+                    }
+                }
+            ]
+        },
+        {
+            "externalId": "commons-codec:commons-codec:1.11",
+            "allVulnerabilities": [
+                {
+                    "name": "BDSA-2012-0001",
+                    "vulnSeverity": "MEDIUM",
+                    "cweIds": [
+                        "CWE-88"
+                    ]
+                }
+            ],
+            "shortTermUpgradeGuidance": {
+                "versionName": "1.15.0.redhat-00001",
+                "externalId": "commons-codec:commons-codec:1.15.0.redhat-00001"
+            },
+            "longTermUpgradeGuidance": {
+                "versionName": "20041127.091804",
+                "externalId": "commons-codec:commons-codec:20041127.091804"
+            },
+            "transitiveUpgradeGuidance": [
+                {
+                    "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.13",
+                    "shortTermUpgradeGuidance": {
+                        "versionName": "4.5.14",
+                        "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.14"
+                    },
+                    "longTermUpgradeGuidance": {
+                        "versionName": "4.5.14",
+                        "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.14"
+                    }
+                }
+            ]
+        }
+    ]
+}
