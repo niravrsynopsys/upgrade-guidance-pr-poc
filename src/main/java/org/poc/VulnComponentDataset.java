@@ -18,7 +18,9 @@ public class VulnComponentDataset {
 
         for (int i = 0; i < items.length(); i++) {
             JSONObject item = items.getJSONObject(i);
-            Boolean isDirect = item.getJSONArray("transitiveUpgradeGuidance").length() > 0;
+
+            // Direct dependency is identified by the transitiveUpgradeGuidance array being empty
+            Boolean isDirect = item.getJSONArray("transitiveUpgradeGuidance").length() == 0;
 
             JSONObject newItem = new JSONObject();
             newItem.put("externalId", item.getString("externalId"));

@@ -31,7 +31,6 @@ public class Main {
             fileWriter.println(intermediateResult.toString(4));
             fileWriter.close();
 
-            // Part 2: Find and update the locations of each component
 
         } catch (IOException | JSONException e) {
             System.out.println("An error occurred while reading the file.");

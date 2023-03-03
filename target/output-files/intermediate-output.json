@@ -2,11 +2,36 @@
     "CRITICAL": {
         "CVE-2016-1000027": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [{
+                    "externalId": "org.springframework:spring-core:5.3.18",
+                    "filePath": "",
+                    "lineNumber": "",
+                    "longTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:6.0.4",
+                        "versionName": "6.0.4",
+                        "vulnerabilityRisk": {
+                            "critical": 0,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    },
+                    "shortTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:5.3.25",
+                        "versionName": "5.3.25",
+                        "vulnerabilityRisk": {
+                            "critical": 1,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    }
+                }],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.springframework:spring-beans:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.springframework:spring-beans:6.0.4",
                             "versionName": "6.0.4",
@@ -32,8 +57,6 @@
                     },
                     {
                         "externalId": "org.springframework:spring-expression:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.springframework:spring-expression:6.0.4",
                             "versionName": "6.0.4",
@@ -59,8 +82,6 @@
                     },
                     {
                         "externalId": "org.springframework:spring-aop:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.springframework:spring-aop:6.0.4",
                             "versionName": "6.0.4",
@@ -84,26 +105,32 @@
                             }
                         }
                     }
-                ],
+                ]
+            },
+            "vulnDescription": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data."
+        },
+        "CVE-2022-1471": {
+            "vulnDependencies": {
+                "directDependencies": [],
                 "transitiveDependencies": [{
-                    "externalId": "org.springframework:spring-core:5.3.18",
+                    "externalId": "org.yaml:snakeyaml:1.30",
                     "longTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:6.0.4",
-                        "versionName": "6.0.4",
+                        "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
+                        "versionName": "1.33",
                         "vulnerabilityRisk": {
                             "critical": 0,
-                            "high": 0,
+                            "high": 1,
                             "low": 0,
                             "medium": 0,
                             "unscored": 0
                         }
                     },
                     "shortTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:5.3.25",
-                        "versionName": "5.3.25",
+                        "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
+                        "versionName": "1.33",
                         "vulnerabilityRisk": {
-                            "critical": 1,
-                            "high": 0,
+                            "critical": 0,
+                            "high": 1,
                             "low": 0,
                             "medium": 0,
                             "unscored": 0
@@ -111,50 +138,42 @@
                     }
                 }]
             },
-            "vulnDescription": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data."
-        },
-        "CVE-2022-1471": {
-            "vulnDependencies": {
-                "directDependencies": [{
-                    "externalId": "org.yaml:snakeyaml:1.30",
-                    "filePath": "",
-                    "lineNumber": "",
-                    "longTermUpgradeGuidance": {
-                        "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
-                        "versionName": "1.33",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 1,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    },
-                    "shortTermUpgradeGuidance": {
-                        "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
-                        "versionName": "1.33",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 1,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    }
-                }],
-                "transitiveDependencies": []
-            },
             "vulnDescription": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
         }
     },
     "HIGH": {},
     "LOW": {"BDSA-2022-1040": {
         "vulnDependencies": {
-            "directDependencies": [
+            "directDependencies": [{
+                "externalId": "org.springframework:spring-core:5.3.18",
+                "filePath": "",
+                "lineNumber": "",
+                "longTermUpgradeGuidance": {
+                    "externalId": "org.springframework:spring-core:6.0.4",
+                    "versionName": "6.0.4",
+                    "vulnerabilityRisk": {
+                        "critical": 0,
+                        "high": 0,
+                        "low": 0,
+                        "medium": 0,
+                        "unscored": 0
+                    }
+                },
+                "shortTermUpgradeGuidance": {
+                    "externalId": "org.springframework:spring-core:5.3.25",
+                    "versionName": "5.3.25",
+                    "vulnerabilityRisk": {
+                        "critical": 1,
+                        "high": 0,
+                        "low": 0,
+                        "medium": 0,
+                        "unscored": 0
+                    }
+                }
+            }],
+            "transitiveDependencies": [
                 {
                     "externalId": "org.springframework:spring-beans:5.3.18",
-                    "filePath": "",
-                    "lineNumber": "",
                     "longTermUpgradeGuidance": {
                         "externalId": "org.springframework:spring-beans:6.0.4",
                         "versionName": "6.0.4",
@@ -180,8 +199,6 @@
                 },
                 {
                     "externalId": "org.springframework:spring-expression:5.3.18",
-                    "filePath": "",
-                    "lineNumber": "",
                     "longTermUpgradeGuidance": {
                         "externalId": "org.springframework:spring-expression:6.0.4",
                         "versionName": "6.0.4",
@@ -207,8 +224,6 @@
                 },
                 {
                     "externalId": "org.springframework:spring-aop:5.3.18",
-                    "filePath": "",
-                    "lineNumber": "",
                     "longTermUpgradeGuidance": {
                         "externalId": "org.springframework:spring-aop:6.0.4",
                         "versionName": "6.0.4",
@@ -232,42 +247,16 @@
                         }
                     }
                 }
-            ],
-            "transitiveDependencies": [{
-                "externalId": "org.springframework:spring-core:5.3.18",
-                "longTermUpgradeGuidance": {
-                    "externalId": "org.springframework:spring-core:6.0.4",
-                    "versionName": "6.0.4",
-                    "vulnerabilityRisk": {
-                        "critical": 0,
-                        "high": 0,
-                        "low": 0,
-                        "medium": 0,
-                        "unscored": 0
-                    }
-                },
-                "shortTermUpgradeGuidance": {
-                    "externalId": "org.springframework:spring-core:5.3.25",
-                    "versionName": "5.3.25",
-                    "vulnerabilityRisk": {
-                        "critical": 1,
-                        "high": 0,
-                        "low": 0,
-                        "medium": 0,
-                        "unscored": 0
-                    }
-                }
-            }]
+            ]
         },
         "vulnDescription": "Spring Framework is vulnerable to data binding protection bypass due to improper validation of specified disallowed fields in `DataBinders`. This could be leveraged by an attacker to bypass the suggested workaround to **CVE-2022-22965** (**BDSA-2022-0858**) if it is improperly implemented."
     }},
     "MEDIUM": {
         "BDSA-2012-0001": {
             "vulnDependencies": {
-                "directDependencies": [{
+                "directDependencies": [],
+                "transitiveDependencies": [{
                     "externalId": "commons-codec:commons-codec:1.11",
-                    "filePath": "",
-                    "lineNumber": "",
                     "longTermUpgradeGuidance": {
                         "externalId": "commons-codec:commons-codec:20041127.091804",
                         "versionName": "20041127.091804",
@@ -290,17 +279,15 @@
                             "unscored": 0
                         }
                     }
-                }],
-                "transitiveDependencies": []
+                }]
             },
             "vulnDescription": "Apache Commons contains a flaw that is due to the Base32 codec decoding  invalid strings instead of rejecting them. This may allow a remote attacker to tunnel  additional information via a base 32 string that seems valid."
         },
         "BDSA-2020-4752": {
             "vulnDependencies": {
-                "directDependencies": [{
+                "directDependencies": [],
+                "transitiveDependencies": [{
                     "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2",
-                    "filePath": "",
-                    "lineNumber": "",
                     "longTermUpgradeGuidance": {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                         "versionName": "2.14.2",
@@ -315,6 +302,256 @@
                     "shortTermUpgradeGuidance": {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                         "versionName": "2.14.2",
+                        "vulnerabilityRisk": {
+                            "critical": 0,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    }
+                }]
+            },
+            "vulnDescription": "jackson-databind is vulnerable to a Java `StackOverflow` exception within its implementation of `UntypedObjectDeserializer` due to how deeply nested objects are handled. An attacker could exploit this in order to cause a denial-of-service (DoS) condition."
+        },
+        "BDSA-2022-1329": {
+            "vulnDependencies": {
+                "directDependencies": [{
+                    "externalId": "org.springframework:spring-core:5.3.18",
+                    "filePath": "",
+                    "lineNumber": "",
+                    "longTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:6.0.4",
+                        "versionName": "6.0.4",
+                        "vulnerabilityRisk": {
+                            "critical": 0,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    },
+                    "shortTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:5.3.25",
+                        "versionName": "5.3.25",
+                        "vulnerabilityRisk": {
+                            "critical": 1,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    }
+                }],
+                "transitiveDependencies": [
+                    {
+                        "externalId": "org.springframework:spring-beans:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-beans:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-beans:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    },
+                    {
+                        "externalId": "org.springframework:spring-expression:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-expression:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-expression:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    },
+                    {
+                        "externalId": "org.springframework:spring-aop:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-aop:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-aop:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "vulnDescription": "Spring Framework is vulnerable to denial-of-service (DoS) due to the improper implementation of data binding functionality. A remote attacker could cause a vulnerable server to crash if that server provides file upload functionality."
+        },
+        "BDSA-2022-1330": {
+            "vulnDependencies": {
+                "directDependencies": [{
+                    "externalId": "org.springframework:spring-core:5.3.18",
+                    "filePath": "",
+                    "lineNumber": "",
+                    "longTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:6.0.4",
+                        "versionName": "6.0.4",
+                        "vulnerabilityRisk": {
+                            "critical": 0,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    },
+                    "shortTermUpgradeGuidance": {
+                        "externalId": "org.springframework:spring-core:5.3.25",
+                        "versionName": "5.3.25",
+                        "vulnerabilityRisk": {
+                            "critical": 1,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    }
+                }],
+                "transitiveDependencies": [
+                    {
+                        "externalId": "org.springframework:spring-beans:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-beans:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-beans:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    },
+                    {
+                        "externalId": "org.springframework:spring-expression:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-expression:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-expression:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    },
+                    {
+                        "externalId": "org.springframework:spring-aop:5.3.18",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-aop:6.0.4",
+                            "versionName": "6.0.4",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework:spring-aop:5.3.25",
+                            "versionName": "5.3.25",
+                            "vulnerabilityRisk": {
+                                "critical": 1,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "vulnDescription": "Spring Framework is vulnerable to denial-of-service (DoS) due to the improper handling of the STOMP protocol for websockets. A remote authenticated attacker could leverage this issue in order to cause a server to crash."
+        },
+        "BDSA-2022-1920": {
+            "vulnDependencies": {
+                "directDependencies": [{
+                    "externalId": "org.apache.pdfbox:pdfbox:2.0.25",
+                    "filePath": "",
+                    "lineNumber": "",
+                    "longTermUpgradeGuidance": {
+                        "externalId": "org.apache.pdfbox:pdfbox:2.0.27",
+                        "versionName": "2.0.27",
+                        "vulnerabilityRisk": {
+                            "critical": 0,
+                            "high": 0,
+                            "low": 0,
+                            "medium": 0,
+                            "unscored": 0
+                        }
+                    },
+                    "shortTermUpgradeGuidance": {
+                        "externalId": "org.apache.pdfbox:pdfbox:2.0.27",
+                        "versionName": "2.0.27",
                         "vulnerabilityRisk": {
                             "critical": 0,
                             "high": 0,
@@ -326,272 +563,14 @@
                 }],
                 "transitiveDependencies": []
             },
-            "vulnDescription": "jackson-databind is vulnerable to a Java `StackOverflow` exception within its implementation of `UntypedObjectDeserializer` due to how deeply nested objects are handled. An attacker could exploit this in order to cause a denial-of-service (DoS) condition."
-        },
-        "BDSA-2022-1329": {
-            "vulnDependencies": {
-                "directDependencies": [
-                    {
-                        "externalId": "org.springframework:spring-beans:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-beans:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-beans:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    },
-                    {
-                        "externalId": "org.springframework:spring-expression:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-expression:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-expression:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    },
-                    {
-                        "externalId": "org.springframework:spring-aop:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-aop:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-aop:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    }
-                ],
-                "transitiveDependencies": [{
-                    "externalId": "org.springframework:spring-core:5.3.18",
-                    "longTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:6.0.4",
-                        "versionName": "6.0.4",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    },
-                    "shortTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:5.3.25",
-                        "versionName": "5.3.25",
-                        "vulnerabilityRisk": {
-                            "critical": 1,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    }
-                }]
-            },
-            "vulnDescription": "Spring Framework is vulnerable to denial-of-service (DoS) due to the improper implementation of data binding functionality. A remote attacker could cause a vulnerable server to crash if that server provides file upload functionality."
-        },
-        "BDSA-2022-1330": {
-            "vulnDependencies": {
-                "directDependencies": [
-                    {
-                        "externalId": "org.springframework:spring-beans:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-beans:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-beans:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    },
-                    {
-                        "externalId": "org.springframework:spring-expression:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-expression:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-expression:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    },
-                    {
-                        "externalId": "org.springframework:spring-aop:5.3.18",
-                        "filePath": "",
-                        "lineNumber": "",
-                        "longTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-aop:6.0.4",
-                            "versionName": "6.0.4",
-                            "vulnerabilityRisk": {
-                                "critical": 0,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        },
-                        "shortTermUpgradeGuidance": {
-                            "externalId": "org.springframework:spring-aop:5.3.25",
-                            "versionName": "5.3.25",
-                            "vulnerabilityRisk": {
-                                "critical": 1,
-                                "high": 0,
-                                "low": 0,
-                                "medium": 0,
-                                "unscored": 0
-                            }
-                        }
-                    }
-                ],
-                "transitiveDependencies": [{
-                    "externalId": "org.springframework:spring-core:5.3.18",
-                    "longTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:6.0.4",
-                        "versionName": "6.0.4",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    },
-                    "shortTermUpgradeGuidance": {
-                        "externalId": "org.springframework:spring-core:5.3.25",
-                        "versionName": "5.3.25",
-                        "vulnerabilityRisk": {
-                            "critical": 1,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    }
-                }]
-            },
-            "vulnDescription": "Spring Framework is vulnerable to denial-of-service (DoS) due to the improper handling of the STOMP protocol for websockets. A remote authenticated attacker could leverage this issue in order to cause a server to crash."
-        },
-        "BDSA-2022-1920": {
-            "vulnDependencies": {
-                "directDependencies": [],
-                "transitiveDependencies": [{
-                    "externalId": "org.apache.pdfbox:pdfbox:2.0.25",
-                    "longTermUpgradeGuidance": {
-                        "externalId": "org.apache.pdfbox:pdfbox:2.0.27",
-                        "versionName": "2.0.27",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    },
-                    "shortTermUpgradeGuidance": {
-                        "externalId": "org.apache.pdfbox:pdfbox:2.0.27",
-                        "versionName": "2.0.27",
-                        "vulnerabilityRisk": {
-                            "critical": 0,
-                            "high": 0,
-                            "low": 0,
-                            "medium": 0,
-                            "unscored": 0
-                        }
-                    }
-                }]
-            },
             "vulnDescription": "Apache PDFBox contains a bug that can cause an infinite loop when processing a PDF file. This could allow an attacker to supply a crafted PDF file and cause a denial-of-service (DoS)."
         },
         "BDSA-2022-2577": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -617,8 +596,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -642,18 +619,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "SnakeYAML is vulnerable to a stack-based buffer overflow issue when parsing untrusted YAML files. An attacker could exploit this by providing crafted input in order to cause a denial-of-service (DoS) condition. \n\n**Note**: The vendor disputes the validity of this issue and other similar recently reported issues and have released an [advisory](https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE%20&%20NIST.md) in response."
         },
         "BDSA-2022-2578": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -679,8 +654,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -704,18 +677,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "SnakeYAML is vulnerable to a stack-based buffer overflow issue when parsing untrusted YAML files. An attacker could exploit this by providing crafted input in order to cause a denial-of-service (DoS) condition. \n\n**Note**: The vendor disputes the validity of this issue and other similar recently reported issues and have released an [advisory](https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE%20&%20NIST.md) in response."
         },
         "BDSA-2022-2579": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -741,8 +712,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -766,18 +735,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "SnakeYAML is vulnerable to denial-of-service (DoS) due to a lack of nested depth limitation for collections. An attacker could exploit this by providing crafted input in order to cause a crash. \n\n**Note**: The vendor disputes the validity of this issue and other similar recently reported issues and have released an [advisory](https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE%20&%20NIST.md) in response."
         },
         "BDSA-2022-2587": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -803,8 +770,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -828,18 +793,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "SnakeYAML is vulnerable to denial-of-service (DoS) due to a failure to parse regular expressions that contain large values. A remote attacker could cause a vulnerable application to crash by passing a maliciously crafted regular expression to that application."
         },
         "BDSA-2022-2590": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -865,8 +828,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -890,18 +851,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "SnakeYAML is vulnerable to denial-of-service (DoS) due to a stack overflow which can be triggered by parsing a crafted file. [According to the vendor](https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE%20&%20NIST.md), such vulnerabilities pose low risks unless the parser input is designed to come from untrusted sources on the internet."
         },
         "BDSA-2022-2765": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                             "versionName": "2.14.2",
@@ -927,8 +886,6 @@
                     },
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2.2",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                             "versionName": "2.14.2",
@@ -952,18 +909,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "Jackson Databind is vulnerable to denial-of-service (DoS) due to the improper management of system resources within its primitive value deserialization functionality. A remote attacker could leverage this issue in order to cause a vulnerable system to crash."
         },
         "BDSA-2022-2768": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                             "versionName": "2.14.2",
@@ -989,8 +944,6 @@
                     },
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2.2",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "com.fasterxml.jackson.core:jackson-databind:2.14.2",
                             "versionName": "2.14.2",
@@ -1014,18 +967,16 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "Jackson Databind is vulnerable to denial-of-service (DoS) due to the improper management of system resources within its `BeanDeserializer` component. A remote attacker could cause a vulnerable server to crash by causing that server to process a maliciously crafted serialized object."
         },
         "BDSA-2022-3211": {
             "vulnDependencies": {
-                "directDependencies": [
+                "directDependencies": [],
+                "transitiveDependencies": [
                     {
                         "externalId": "org.yaml:snakeyaml:1.29",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -1051,8 +1002,6 @@
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
-                        "filePath": "",
-                        "lineNumber": "",
                         "longTermUpgradeGuidance": {
                             "externalId": "org.yaml:snakeyaml:1.33.0.redhat-00001",
                             "versionName": "1.33",
@@ -1076,8 +1025,7 @@
                             }
                         }
                     }
-                ],
-                "transitiveDependencies": []
+                ]
             },
             "vulnDescription": "Snakeyaml contains a vulnerability that can lead to an uncaught exception in its `java.util.AbstractSet.hashCode` component. This can subsequently cause a stack-based buffer overflow. An attacker could exploit this flaw by supplying a crafted YAML file."
         }
