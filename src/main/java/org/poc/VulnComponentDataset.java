@@ -5,7 +5,35 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class VulnComponentDataset {
-    public static JSONObject generateVulnComponentDataset(JSONObject inputJsonObj) throws JSONException {
+
+    private void addLocationToItem(JSONObject item) throws JSONException {
+        item.put("filePath", "");
+        item.put("lineNumber", "");
+    }
+
+    private JSONObject generateNewItemTemplate(JSONObject item) throws JSONException {
+        Boolean isDirect = item.getJSONArray("transitiveUpgradeGuidance").length() == 0;
+
+        JSONObject newItem = new JSONObject();
+        newItem.put("externalId", item.getString("externalId"));
+        newItem.put("shortTermUpgradeGuidance", item.getJSONObject("shortTermUpgradeGuidance"));
+        newItem.put("longTermUpgradeGuidance", item.getJSONObject("longTermUpgradeGuidance"));
+
+        if (isDirect) {
+            addLocationToItem(newItem);
+        } else {
+            // If transitive, there can be multiple transitive guidance components available. Add location to each such component.
+            JSONArray transitiveUpgradeGuidanceArr = item.getJSONArray("transitiveUpgradeGuidance");
+            for (int k = 0; k < transitiveUpgradeGuidanceArr.length(); k++) {
+                JSONObject transitiveUpgradeGuidanceObj = transitiveUpgradeGuidanceArr.getJSONObject(k);
+                addLocationToItem(transitiveUpgradeGuidanceObj);
+            }
+            newItem.put("transitiveUpgradeGuidance", transitiveUpgradeGuidanceArr);
+        }
+        return newItem;
+    }
+
+    public JSONObject generateVulnComponentDataset(JSONObject inputJsonObj) throws JSONException {
 
         // Create result object template
         JSONObject result = new JSONObject();
@@ -22,14 +50,7 @@ public class VulnComponentDataset {
             // Direct dependency is identified by the transitiveUpgradeGuidance array being empty
             Boolean isDirect = item.getJSONArray("transitiveUpgradeGuidance").length() == 0;
 
-            JSONObject newItem = new JSONObject();
-            newItem.put("externalId", item.getString("externalId"));
-            newItem.put("shortTermUpgradeGuidance", item.getJSONObject("shortTermUpgradeGuidance"));
-            newItem.put("longTermUpgradeGuidance", item.getJSONObject("longTermUpgradeGuidance"));
-            if (isDirect) {
-                newItem.put("filePath", "");
-                newItem.put("lineNumber", "");
-            }
+            JSONObject newItem = generateNewItemTemplate(item);
 
             JSONArray vulnerabilities = item.getJSONArray("allVulnerabilities");
             for (int j = 0; j < vulnerabilities.length(); j++) {

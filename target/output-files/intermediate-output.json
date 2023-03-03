@@ -53,7 +53,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-expression:5.3.18",
@@ -78,7 +105,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-aop:5.3.18",
@@ -103,7 +157,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -135,7 +216,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                            "versionName": "2.14.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 1,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                            "versionName": "2.14.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 1,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 }]
             },
             "vulnDescription": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization."
@@ -195,7 +303,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                            "versionName": "3.0.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                            "versionName": "2.7.8",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 },
                 {
                     "externalId": "org.springframework:spring-expression:5.3.18",
@@ -220,7 +355,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                            "versionName": "3.0.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                            "versionName": "2.7.8",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 },
                 {
                     "externalId": "org.springframework:spring-aop:5.3.18",
@@ -245,7 +407,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                            "versionName": "3.0.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                            "versionName": "2.7.8",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 }
             ]
         },
@@ -278,7 +467,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.13",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.14",
+                            "versionName": "4.5.14",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "org.apache.httpcomponents:httpclient-osgi:4.5.14",
+                            "versionName": "4.5.14",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 0,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 }]
             },
             "vulnDescription": "Apache Commons contains a flaw that is due to the Base32 codec decoding  invalid strings instead of rejecting them. This may allow a remote attacker to tunnel  additional information via a base 32 string that seems valid."
@@ -309,7 +525,34 @@
                             "medium": 0,
                             "unscored": 0
                         }
-                    }
+                    },
+                    "transitiveUpgradeGuidance": [{
+                        "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                        "filePath": "",
+                        "lineNumber": "",
+                        "longTermUpgradeGuidance": {
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                            "versionName": "2.14.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 1,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        },
+                        "shortTermUpgradeGuidance": {
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                            "versionName": "2.14.2",
+                            "vulnerabilityRisk": {
+                                "critical": 0,
+                                "high": 1,
+                                "low": 0,
+                                "medium": 0,
+                                "unscored": 0
+                            }
+                        }
+                    }]
                 }]
             },
             "vulnDescription": "jackson-databind is vulnerable to a Java `StackOverflow` exception within its implementation of `UntypedObjectDeserializer` due to how deeply nested objects are handled. An attacker could exploit this in order to cause a denial-of-service (DoS) condition."
@@ -367,7 +610,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-expression:5.3.18",
@@ -392,7 +662,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-aop:5.3.18",
@@ -417,7 +714,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -476,7 +800,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-expression:5.3.18",
@@ -501,7 +852,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.springframework:spring-aop:5.3.18",
@@ -526,7 +904,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "org.springframework.boot:spring-boot:2.6.6",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:3.0.2",
+                                "versionName": "3.0.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "org.springframework.boot:spring-boot:2.7.8",
+                                "versionName": "2.7.8",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 0,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -592,7 +997,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -617,7 +1049,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -650,7 +1109,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -675,7 +1161,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -708,7 +1221,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -733,7 +1273,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -766,7 +1333,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -791,7 +1385,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -824,7 +1445,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -849,7 +1497,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -882,7 +1557,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2.2",
@@ -907,7 +1609,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -940,7 +1669,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "com.fasterxml.jackson.core:jackson-databind:2.13.2.2",
@@ -965,7 +1721,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
@@ -998,7 +1781,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     },
                     {
                         "externalId": "org.yaml:snakeyaml:1.30",
@@ -1023,7 +1833,34 @@
                                 "medium": 0,
                                 "unscored": 0
                             }
-                        }
+                        },
+                        "transitiveUpgradeGuidance": [{
+                            "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2",
+                            "filePath": "",
+                            "lineNumber": "",
+                            "longTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            },
+                            "shortTermUpgradeGuidance": {
+                                "externalId": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2",
+                                "versionName": "2.14.2",
+                                "vulnerabilityRisk": {
+                                    "critical": 0,
+                                    "high": 1,
+                                    "low": 0,
+                                    "medium": 0,
+                                    "unscored": 0
+                                }
+                            }
+                        }]
                     }
                 ]
             },
